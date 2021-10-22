@@ -1,3 +1,7 @@
+// 👨‍💻 remove your custom "expect" and "test" functions
+// 👨‍💻 run `npm test:watch` and see that Jest is running and show error in console
+// 👨‍💻 find the bug and fix it
+
 const obj = {
 	foo: 'baz',
 	bar: 'zzz'
@@ -35,3 +39,4 @@ function test(testName, callback) {
 		console.error(error);
 	}
 }
+
