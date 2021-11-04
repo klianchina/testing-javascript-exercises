@@ -15,3 +15,5 @@ function expect(actualResult) {
 		},
 	}
 }
+
+// 💡 see implementation of this tool in jest repo https://github.com/facebook/jest/blob/eaee8a61165a14ae0da4075697d1e6c8a6c90edd/packages/expect/src/matchers.js

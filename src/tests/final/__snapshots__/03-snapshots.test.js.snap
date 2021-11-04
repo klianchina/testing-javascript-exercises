@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Counter/> renders correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      Current
+       
+      count: 
+      0
+    </h1>
+    <button>
+      Decrement
+    </button>
+    <button>
+      Increment
+    </button>
+  </div>
+</div>
+`;

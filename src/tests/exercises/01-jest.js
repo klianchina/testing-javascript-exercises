@@ -1,5 +1,6 @@
 // 👨‍💻 remove your custom "expect" and "test" functions
-// 👨‍💻 run `npm test:watch` and see that Jest is running and show error in console
+// 👨‍💻 rename the file to 01-jest.test.js
+// 👨‍💻 run `yarn test:watch` and see that Jest is running and show error in console
 // 👨‍💻 find the bug and fix it
 
 const obj = {
