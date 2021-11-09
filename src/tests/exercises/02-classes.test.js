@@ -49,7 +49,7 @@ test('sets new color', () => {
 })
 
 test('check init works correctly', () => {
-  /// 👨‍💻 call initialization
+  // 👨‍💻 call initialization
   // 👨‍💻 find error in console
   // 🔧 fix it (wrap all tests in describe block and use beforeEach for color reset before each test)
   // ✅ check rectangle is initialized
