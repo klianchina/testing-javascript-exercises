@@ -10,20 +10,12 @@
     "npm": ">=6"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start",
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
-    "lint": "eslint ."
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "Tatiana Klianchina",
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
   "babel": {
     "presets": [
       "react-app"
@@ -31,9 +23,7 @@
   },
   "eslintIgnore": [
     "coverage",
-    "node_modules",
-    "build",
-    "other"
+    "node_modules"
   ],
   "repository": {
     "type": "git",
@@ -56,17 +46,5 @@
     "jest-watch-select-projects": "2.0.0",
     "jest-watch-typeahead": "1.0.0",
     "react-scripts": "4.0.3"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
