@@ -5,6 +5,7 @@
 Here we will dive into some basis
 and will try to make our own implementation of testing tools 🤓
 
+Run `yarn` to install all needed dependencies
 Run `yarn test:watch` to ensure everything is working right
 
 ###### Here we have three main folders:
