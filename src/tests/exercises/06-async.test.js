@@ -12,7 +12,7 @@ const fetchData = async (callback) => {
 
 test('user is Luke Skywalker', async () => {
   // 👨‍💻 at first mock request.get with mock resolved value (follow the API link to see data structure )
-  // 💡 if you forget how to do it have a look in src/tests/examples/07-example-async.js
+  // 💡 if you forget how to do it have a look in src/tests/examples/06-example-async.js
 
   // 👨‍💻 create a mocked callback using jest.fn and pass implementation (name) => name
   // 💡 if you forget how to do it have a look in src/tests/examples/05-example-mocking.test.js
