@@ -40,7 +40,7 @@ test('check dumpFunctionThatCallsAnotherDump calls dumpFunction with proper para
 })
 
 const MyComponent = () => (
-  <div id={'my-component'}>
+  <div id="my-component">
     <h1>My test component</h1>
     <p>Here my awesome text</p>
   </div>

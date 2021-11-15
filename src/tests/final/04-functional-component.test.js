@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Counter from '../../components/counter';
-import {render, fireEvent} from '@testing-library/react';
+import {render} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 /* Using React DOM render */
 test('counter increments when the button is clicked', () => {
@@ -33,9 +34,9 @@ test('counter increments when the button is clicked with testing-library', () =>
 
   expect(message.textContent).toBe('Current count: 0');
 
-  fireEvent.click(increment);
+  userEvent.click(increment);
   expect(message.textContent).toBe('Current count: 1');
-  fireEvent.click(decrement);
+  userEvent.click(decrement);
   expect(message.textContent).toBe('Current count: 0');
 });
 

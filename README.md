@@ -1,12 +1,26 @@
 # testing-javascript-exercises
 
-#### Welcome to Testing Javascript workshop!
+### Welcome to Testing Javascript workshop!
 
 Here we will dive into some basis
 and will try to make our own implementation of testing tools 🤓
 
-Run `yarn` to install all needed dependencies
-Run `yarn test:watch` to ensure everything is working right
+### Requirements
+
+The project is required `yarn`
+
+It is recommended to install Yarn through the npm package manager. You can run the following both to install and upgrade Yarn:
+
+```sh
+npm install --global yarn
+```
+
+### Before we go
+
+- Run `yarn` to install all needed dependencies
+- Run `yarn test:watch` to ensure everything is working right
+
+### Important info
 
 ###### Here we have three main folders:
 

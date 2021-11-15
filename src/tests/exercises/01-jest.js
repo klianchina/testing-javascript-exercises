@@ -8,7 +8,7 @@ const obj = {
   bar: 'zzz'
 };
 
-const expected = 'foo';
+const expected = 'fooBar';
 
 expect(obj).toHaveProperty(expected);
 

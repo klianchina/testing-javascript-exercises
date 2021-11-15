@@ -1,7 +1,8 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 // import Counter from '../../components/counter';
-// import {render, fireEvent} from '@testing-library/react';
+// import {render} from '@testing-library/react';
+// import userEvent from '@testing-library/user-event';
 
 test('counter increments when the button is clicked', () => {
   // 👨‍💻 choose ReactDOM or @testing-library for render (🤫 @testing-library is less verbose)
