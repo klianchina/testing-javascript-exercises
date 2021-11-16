@@ -17,10 +17,10 @@ function expect(actualResult) {
       if (actualResult !== expected) {
         throw new Error(`${result} is not equal to ${expected}`);
       }
-    },
+    }
     // 👨‍💻 write method for expect that will check if the object has property
     // ‍✅ apply uncomment the line 8 and run `node src/tests/exercises/01-custom-testing-tool.js`
-  }
+  };
 }
 
 // 👨‍💻 write test tool that will receive title of your test and callback (hint: use try-catch for it)

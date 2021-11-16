@@ -12,13 +12,3 @@ test('counter increments when the button is clicked', () => {
   // 👨‍💻 fire click event on decrement button
   // ‍✅ check if the text was change and it's correct
 });
-
-
-
-
-
-
-
-
-
-

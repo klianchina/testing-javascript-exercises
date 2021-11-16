@@ -11,17 +11,21 @@ const Button = () => {
 
   const handleClick = () => {
     setIsLoading(!isLoading);
-  }
+  };
 
   return (
-    <button data-testid="button" className={isLoading ? 'button_loading' : 'button'} onClick={handleClick}>
+    <button
+      data-testid="button"
+      className={isLoading ? 'button_loading' : 'button'}
+      onClick={handleClick}
+    >
       Click me
     </button>
   );
-}
+};
 
 test('calls function on button click', () => {
-  render(<Button/>);
+  render(<Button />);
   const button = screen.getByTestId('button');
 
   expect(button.className).toBe('button');
@@ -29,4 +33,4 @@ test('calls function on button click', () => {
   userEvent.click(button);
 
   expect(button.className).toBe('button_loading');
-})
+});
