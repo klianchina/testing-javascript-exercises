@@ -11,7 +11,7 @@ function fn(implementation = () => {}) {
     return implementation(...args);
   };
 
-  // 💡 this is a mock object that we want to reproduce in our implementation
+  // 💡 this is a mock object declaration that we want to reproduce in our implementation
   mockFn.mock = {calls: []};
 
   return mockFn;

@@ -10,3 +10,4 @@ if (result !== expected) {
 
 // fix the bug
 // write test for subtract
+// node src/tests/examples/01-example-custom-test.js

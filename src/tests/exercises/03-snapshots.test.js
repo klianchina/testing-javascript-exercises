@@ -5,12 +5,12 @@ describe('Component: <Counter/>', () => {
   // 👨‍💻 write test 1 that will make a snapshot for Counter with the help of render from @testing-library/react
   // 👨‍💻 then write test 2 with the valuesToCount prop for example 'tomatoes' 🍅 and make the snapshot with this prop
   // 👨‍💻 run test
-  // ‍✅ check the snapshots __snapshot folder
+  // ‍✅ check the snapshots __snapshot__ folder
   // 👨‍💻 change the Counter component (but not too much), for example capitalize letter in word "current"
   // ‍✅ check what changed in console
   // 👨‍💻 press U in console to update snapshots due to new updates in the component
 
-  test('renders properly', () => {});
+  test('renders properly without props', () => {});
 
   test('renders properly with valuesToCount prop', () => {});
 

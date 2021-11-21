@@ -46,29 +46,29 @@ const MyComponent = () => (
   </div>
 );
 
-// describe('Component: <MyComponent/>', () => {
-//   const div = document.createElement('div');
-//   document.body.appendChild(div);
-//   ReactDOM.render(<MyComponent />, div);
-//
-//   const component = document.body.querySelector('#my-component');
-//
-//   test('renders correctly', () => {
-//     expect(component).toMatchSnapshot();
-//   })
-//
-//   test('renders correctly (using inline)', () => {
-//     expect(component).toMatchInlineSnapshot(`
-//       <div
-//         id="my-component"
-//       >
-//         <h1>
-//           My test component
-//         </h1>
-//         <p>
-//           Here my awesome text
-//         </p>
-//       </div>
-//     `);
-//   })
-// })
+describe('Component: <MyComponent/>', () => {
+  const div = document.createElement('div');
+  document.body.appendChild(div);
+  ReactDOM.render(<MyComponent />, div);
+
+  const component = document.body.querySelector('#my-component');
+
+  // test('renders correctly', () => {
+  //   expect(component).toMatchSnapshot();
+  // })
+  //
+  // test('renders correctly (using inline)', () => {
+  //   expect(component).toMatchInlineSnapshot(`
+  //     <div
+  //       id="my-component"
+  //     >
+  //       <h1>
+  //         My test component
+  //       </h1>
+  //       <p>
+  //         Here my awesome text
+  //       </p>
+  //     </div>
+  //   `);
+  // })
+})

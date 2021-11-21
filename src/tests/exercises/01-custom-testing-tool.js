@@ -24,5 +24,5 @@ function expect(actualResult) {
 }
 
 // 👨‍💻 write test tool that will receive title of your test and callback (hint: use try-catch for it)
-// 👨‍💻 this function should show an error message if NOT test passed and successful message if it passed
+// 👨‍💻 this function should show an error message if test did NOT pass and successful message if it passed
 // ✅ uncomment 10-12 lines and run `node src/tests/exercises/01-custom-testing-tool.js`
