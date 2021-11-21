@@ -16,7 +16,7 @@ let dumpFunction = (obj) => obj;
 const dumpFunctionThatCallsAnotherDump = () => {
   dumpFunction({
     foo: '',
-    bar: ''
+    bar: '',
   });
 };
 
@@ -71,4 +71,4 @@ describe('Component: <MyComponent/>', () => {
   //     </div>
   //   `);
   // })
-})
+});

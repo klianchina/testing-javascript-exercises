@@ -1,6 +1,6 @@
 const obj = {
   foo: 'baz',
-  bar: 'zzz'
+  bar: 'zzz',
 };
 
 const expected = 'foo';
@@ -24,7 +24,7 @@ function expect(actualResult) {
           `${JSON.stringify(actualResult)} do not have ${expected} property`
         );
       }
-    }
+    },
   };
 }
 

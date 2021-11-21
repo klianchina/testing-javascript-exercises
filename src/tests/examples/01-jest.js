@@ -12,7 +12,7 @@ function expect(actualResult) {
       if (actualResult !== expected) {
         console.error(`${result} is not equal to ${expected}`);
       }
-    }
+    },
   };
 }
 

@@ -13,5 +13,5 @@ function getWinner(player1, player2) {
 }
 
 export default {
-  getWinner
+  getWinner,
 };

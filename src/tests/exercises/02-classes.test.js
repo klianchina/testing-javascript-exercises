@@ -1,68 +1,40 @@
-class BaiduAnalytics {
-  constructor() {
-    this.isInit = false;
+class Rectangle {
+  defaultColor = 'white';
+
+  constructor(width, height) {
+    this.height = height;
+    this.width = width;
+    this.color = this.defaultColor;
   }
 
-  async init() {
-    await this.loadAnalyticsAssets();
-    this.isInit = true;
-  }
-
-  loadAnalyticsAssets() {
-    return Promise.resolve();
-  }
-
-  trackEvent(event) {
-    if (!this.isInit) {
-      throw new Error(
-        'BaiduAnalytics: analytics in not initialized, try to call init method first'
-      );
+  init() {
+    if (this.color !== this.defaultColor) {
+      throw new Error('Color is already set');
     }
+  }
 
+  getArea() {
+    return this.height * this.width;
+  }
+
+  setColor(color) {
+    this.color = color;
+  }
+
+  getAllData() {
     return {
-      event,
-      provider: 'baidu'
+      height: this.height,
+      width: this.width,
+      color: this.color,
     };
+  }
+
+  resetColor() {
+    this.color = this.defaultColor;
   }
 }
 
-// class Rectangle {
-//   defaultColor = 'white';
-
-//   constructor(width, height) {
-//     this.height = height;
-//     this.width = width;
-//     this.color = this.defaultColor;
-//   }
-
-//   init() {
-//     if (this.color !== this.defaultColor) {
-//       throw new Error('Color is already set');
-//     }
-//   }
-
-//   getArea() {
-//     return this.height * this.width;
-//   }
-
-//   setColor(color) {
-//     this.color = color;
-//   }
-
-//   getAllData() {
-//     return {
-//       height: this.height,
-//       width: this.width,
-//       color: this.color
-//     };
-//   }
-
-//   resetColor() {
-//     this.color = this.defaultColor;
-//   }
-// }
-
-// const instance = new Rectangle(2, 10);
+const instance = new Rectangle(2, 10);
 
 test('returns correct area', () => {
   // 👨‍💻 call getArea and check if the value is equal to expected
