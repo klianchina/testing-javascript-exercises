@@ -9,7 +9,7 @@ expect(obj).toHaveProperty(expected);
 
 test('check if obj contains foo', () => {
   expect(obj).toHaveProperty(expected);
-})
+});
 
 function expect(actualResult) {
   return {
@@ -20,10 +20,12 @@ function expect(actualResult) {
     },
     toHaveProperty(expected) {
       if (!(expected in actualResult)) {
-        throw new Error(`${JSON.stringify(actualResult)} do not have ${expected} property`);
+        throw new Error(
+          `${JSON.stringify(actualResult)} do not have ${expected} property`
+        );
       }
     }
-  }
+  };
 }
 
 function test(testName, callback) {

@@ -7,9 +7,9 @@ export function thumbWar(player1, player2) {
   while (player1Wins < numberToWin && player2Wins < numberToWin) {
     const winner = utils.getWinner(player1, player2);
     if (winner === player1) {
-      player1Wins++
+      player1Wins++;
     } else if (winner === player2) {
-      player2Wins++
+      player2Wins++;
     }
   }
   return player1Wins > player2Wins ? player1 : player2;

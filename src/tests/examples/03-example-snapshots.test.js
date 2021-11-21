@@ -12,13 +12,13 @@ import ReactDOM from 'react-dom';
 // Snapshots is a good tool for making snaps of your component
 // but be careful to make too many snapshots for each state when it's not necessary
 
-let dumpFunction = obj => obj;
+let dumpFunction = (obj) => obj;
 const dumpFunctionThatCallsAnotherDump = () => {
   dumpFunction({
     foo: '',
-    bar: '',
+    bar: ''
   });
-}
+};
 
 test('check dumpFunctionThatCallsAnotherDump calls dumpFunction with proper params', () => {
   // add spy to allow jest to spy the function
@@ -37,10 +37,10 @@ test('check dumpFunctionThatCallsAnotherDump calls dumpFunction with proper para
       ],
     ]
   `);
-})
+});
 
 const MyComponent = () => (
-  <div id={'my-component'}>
+  <div id="my-component">
     <h1>My test component</h1>
     <p>Here my awesome text</p>
   </div>

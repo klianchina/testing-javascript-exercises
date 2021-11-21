@@ -10,13 +10,9 @@ describe('Component: <Counter/>', () => {
   // ‍✅ check what changed in console
   // 👨‍💻 press U in console to update snapshots due to new updates in the component
 
-  test('renders properly', () => {
+  test('renders properly', () => {});
 
-  });
-
-  test('renders properly with valuesToCount prop', () => {
-
-  });
+  test('renders properly with valuesToCount prop', () => {});
 
   // ⭐ to avoid a lot of similar snapshots you can get the changed line with selector
   // and to compare it to expected result
@@ -24,5 +20,3 @@ describe('Component: <Counter/>', () => {
   // 👨‍💻 write test expect(header.textContent).toBe('Current tomatoes count: 0')
   // 👨‍💻 remove unnecessary test with similar snapshot
 });
-
-

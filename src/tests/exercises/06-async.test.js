@@ -6,7 +6,7 @@ const fetchData = async (callback) => {
   setTimeout(() => {
     callback(response.data.name);
   }, 200);
-}
+};
 
 // use fake timers from jest (jest.useFakeTimers())
 

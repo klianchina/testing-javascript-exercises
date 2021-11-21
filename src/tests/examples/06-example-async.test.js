@@ -12,7 +12,7 @@ test('calls callback after 200ms', () => {
   delay(200, doSomething);
 
   // expect(doSomething).toHaveBeenCalled();
-})
+});
 
 // any kind of wait realization or wrap it in delay itself will slow down the code
 // so jest has already cared about it
@@ -25,7 +25,7 @@ test('calls callback after 200ms', () => {
 const fetchData = async (callback) => {
   const response = await request.get('https://swapi.dev/api/people/1');
   return callback(response.data.name);
-}
+};
 
 test('user is Luke Skywalker', () => {
   // don't forget to mock function that makes real call to API
@@ -50,10 +50,9 @@ test('user is Luke Skywalker', () => {
 test('user is Luke Skywalker (with promises)', () => {
   const callback = (name) => name;
 
-  return fetchData(callback)
-    .then(name => {
-      expect(name).toBe('Luke Skywalker');
-    });
+  return fetchData(callback).then((name) => {
+    expect(name).toBe('Luke Skywalker');
+  });
 
   // the same with async/await
-})
+});

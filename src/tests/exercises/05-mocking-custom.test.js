@@ -8,13 +8,13 @@ function fn(implementation = () => {}) {
     // 👨‍💻 uncomment the line 25 and run the test
     // ✅ check it's passed
 
-    return implementation(...args)
+    return implementation(...args);
   };
 
   // 💡 this is a mock object that we want to reproduce in our implementation
   mockFn.mock = {calls: []};
 
-  return mockFn
+  return mockFn;
 }
 
 test('returns player1 as winner', () => {

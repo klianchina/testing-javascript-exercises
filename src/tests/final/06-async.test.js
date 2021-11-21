@@ -6,12 +6,14 @@ const fetchData = async (callback) => {
   setTimeout(() => {
     callback(response.data.name);
   });
-}
+};
 
 jest.useFakeTimers();
 
 test('user is Luke Skywaker', async () => {
-  jest.spyOn(request, 'get').mockResolvedValue({data: {name: 'Luke Skywalker'}});
+  jest
+    .spyOn(request, 'get')
+    .mockResolvedValue({data: {name: 'Luke Skywalker'}});
 
   const callback = jest.fn((name) => name);
 
@@ -19,4 +21,4 @@ test('user is Luke Skywaker', async () => {
   jest.advanceTimersByTime(200);
 
   expect(callback).toHaveBeenLastCalledWith('Luke Skywalker');
-})
+});

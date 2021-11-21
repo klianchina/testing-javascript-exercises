@@ -1,5 +1,5 @@
 class Rectangle {
-  defaultColor = 'white'
+  defaultColor = 'white';
 
   constructor(width, height) {
     this.height = height;
@@ -33,22 +33,20 @@ describe('Rectangle', () => {
 
   beforeEach(() => {
     instance.resetColor();
-  })
+  });
 
   test('returns correct area', () => {
     expect(instance.getArea()).toEqual(20);
-  })
+  });
 
   test('sets new color', () => {
     instance.setColor('black');
     expect(instance.color).toBe('black');
-  })
+  });
 
   test('check init works correctly', () => {
     instance.init();
 
     expect(instance.initialized).toBe(true);
-  })
-})
-
-
+  });
+});

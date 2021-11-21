@@ -4,14 +4,14 @@
 // service that has a testing environment we don't control
 // and is unreliable so we want to mock it out for tests.
 function getWinner(player1, player2) {
-  const winningNumber = Math.random()
+  const winningNumber = Math.random();
   return winningNumber < 1 / 3
     ? player1
     : winningNumber < 2 / 3
-      ? player2
-      : null
+    ? player2
+    : null;
 }
 
 export default {
-  getWinner,
-}
+  getWinner
+};

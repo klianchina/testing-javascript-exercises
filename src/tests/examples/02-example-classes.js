@@ -6,14 +6,11 @@ describe('My module', () => {
     // init smth
     // jest.resetAllMocks() or jest one
     // jest.restoreAllMocks() or jest one
-  })
+  });
 
-  beforeEach(() => {
-  })
+  beforeEach(() => {});
 
-  afterAll(() => {
-  })
+  afterAll(() => {});
 
-  afterEach(() => {
-  })
-})
+  afterEach(() => {});
+});
