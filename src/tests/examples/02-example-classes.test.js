@@ -2,7 +2,7 @@ class Rectangle {
   initialHeight = 0;
   initialWidth = 0;
 
-  init(height, width) {
+  constructor(height, width) {
     this.height = height;
     this.width = width;
   }
@@ -13,10 +13,9 @@ class Rectangle {
   }
 }
 
-const instance = new Rectangle();
-
 test('Rectangle', () => {
-  instance.init(2, 2);
+  const instance = new Rectangle(2, 2);
+
   expect(instance.height).toBe(2);
 });
 
@@ -28,10 +27,7 @@ describe('My module', () => {
   // init smth
   // jest.resetAllMocks() or jest one
   // jest.restoreAllMocks() or jest one
-
   // beforeEach(() => {});
-
   // afterAll(() => {});
-
   // afterEach(() => {});
 });

@@ -25,7 +25,7 @@ class Rectangle {
     return {
       height: this.height,
       width: this.width,
-      color: this.color
+      color: this.color,
     };
   }
 
