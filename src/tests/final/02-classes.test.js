@@ -36,7 +36,7 @@ describe('Rectangle', () => {
   });
 
   test('returns correct area', () => {
-    expect(instance.getArea()).toEqual(20);
+    expect(instance.getArea()).toBe(20);
   });
 
   test('sets new color', () => {

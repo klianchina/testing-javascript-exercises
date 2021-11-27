@@ -31,3 +31,5 @@ describe('My module', () => {
   // afterAll(() => {});
   // afterEach(() => {});
 });
+
+// jest docs https://jestjs.io/ru/docs/api#beforeallfn-timeout

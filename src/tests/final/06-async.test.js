@@ -10,7 +10,7 @@ const fetchData = async (callback) => {
 
 jest.useFakeTimers();
 
-test('user is Luke Skywaker', async () => {
+test('user is Luke Skywalker', async () => {
   jest
     .spyOn(request, 'get')
     .mockResolvedValue({data: {name: 'Luke Skywalker'}});

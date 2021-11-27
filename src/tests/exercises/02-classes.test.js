@@ -11,6 +11,8 @@ class Rectangle {
     if (this.color !== this.defaultColor) {
       throw new Error('Color is already set');
     }
+
+    this.initialized = true;
   }
 
   getArea() {
