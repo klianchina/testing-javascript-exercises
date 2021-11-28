@@ -18,3 +18,5 @@ module.exports = {
     './scripts/prepare-env.js',
   ],
 }
+
+// docs https://jestjs.io/docs/configuration
