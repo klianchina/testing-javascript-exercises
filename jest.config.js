@@ -2,6 +2,9 @@ const path = require('path')
 
 module.exports = {
   testEnvironment: 'jest-environment-jsdom',
+  // moduleNameMapper: {
+  //   "\.module\.css$": require.resolve('./scripts/css-modules-mock.js'),
+  // },
   moduleNameMapper: {
     "\.module\.css$": 'identity-obj-proxy',
   },
