@@ -1,23 +1,33 @@
-let dumpFunc = (obj) => obj;
+// Serialization process
+// It's not like a JSON stringify
+// It's giving a label to each one of these objects so that it's more clear what these things are
 
-const dumpFunctionThatCallsAnotherDump = () => {
-  dumpFunc({
-    foo: '',
-    bar: '',
-  });
-};
+const getFrontendAreas = () => (
+  [
+    {name: 'falcon', membersCount: 4},
+    {name: 'mockingbird', membersCount: 5},
+    {name: 'falcon', membersCount: 7},
+    // {name: 'new', membersCount: 1},
+  ]
+);
 
-test('check dumpFunctionThatCallsAnotherDump calls dumpFunction with proper params', () => {
-  // add spy to allow jest to spy the function
-  dumpFunc = jest.fn();
-  dumpFunctionThatCallsAnotherDump();
-
-  // first array - it's function calls
-  // second array - it's arguments
-  expect(dumpFunc.mock.calls[0][0]).toMatchInlineSnapshot(`
-    Object {
-      "bar": "",
-      "foo": "",
-    }
-  `);
+test('getFrontendAreas returns all areas', () => {
+  expect(getFrontendAreas()).toMatchInlineSnapshot(`
+Array [
+  Object {
+    "membersCount": 4,
+    "name": "falcon",
+  },
+  Object {
+    "membersCount": 5,
+    "name": "mockingbird",
+  },
+  Object {
+    "membersCount": 7,
+    "name": "falcon",
+  },
+]
+`);
 });
+
+// jest src/tests/examples/03-example-snapshot-objects.test.js

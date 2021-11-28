@@ -2,17 +2,24 @@
 
 exports[`Component: <Counter/> renders correctly 1`] = `
 <div>
-  <div>
-    <h1>
+  <div
+    class="root"
+  >
+    <h1
+      class="title"
+    >
       Current
-       
-      count: 
+       count: 
       0
     </h1>
-    <button>
+    <button
+      class="button"
+    >
       Decrement
     </button>
-    <button>
+    <button
+      class="button"
+    >
       Increment
     </button>
   </div>
