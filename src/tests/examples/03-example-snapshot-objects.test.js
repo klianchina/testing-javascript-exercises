@@ -12,7 +12,22 @@ const getFrontendAreas = () => (
 );
 
 test('getFrontendAreas returns all areas', () => {
-  expect(getFrontendAreas()).toMatchInlineSnapshot();
+  expect(getFrontendAreas()).toMatchInlineSnapshot(`
+Array [
+  Object {
+    "membersCount": 4,
+    "name": "falcon",
+  },
+  Object {
+    "membersCount": 5,
+    "name": "mockingbird",
+  },
+  Object {
+    "membersCount": 7,
+    "name": "falcon",
+  },
+]
+`);
 });
 
 // jest src/tests/examples/03-example-snapshot-objects.test.js

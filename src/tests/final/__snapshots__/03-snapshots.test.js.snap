@@ -5,8 +5,7 @@ exports[`Component: <Counter/> renders correctly 1`] = `
   <div>
     <h1>
       Current
-       
-      count: 
+       count: 
       0
     </h1>
     <button>

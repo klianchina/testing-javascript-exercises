@@ -26,9 +26,9 @@ describe('Component: <MyComponent/>', () => {
 
   // const {container: component} = render(<MyComponent />);
 
-  // test('renders correctly', () => {
-  //   expect(component).toMatchSnapshot();
-  // })
+  test('renders correctly', () => {
+    // expect(component).toMatchSnapshot();
+  });
 
   // test('renders correctly (using inline)', () => {
   //   expect(component).toMatchInlineSnapshot(`
