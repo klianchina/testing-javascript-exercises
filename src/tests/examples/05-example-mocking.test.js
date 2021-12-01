@@ -27,3 +27,5 @@ test('thumbWar returns player 1', () => {
 // }));
 
 // external with __mocks__
+
+// jest src/tests/examples/05-example-mocking.test.js

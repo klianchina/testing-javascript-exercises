@@ -34,3 +34,5 @@ test('calls function on button click', () => {
 
   expect(button.className).toBe('button_loading');
 });
+
+// jest src/tests/examples/04-example-functional-component.test.js

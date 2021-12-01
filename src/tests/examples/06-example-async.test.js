@@ -14,6 +14,8 @@ test('calls callback after 200ms', () => {
   // expect(doSomething).toHaveBeenCalled();
 });
 
+// jest src/tests/examples/06-example-async.test.js
+
 // any kind of wait realization or wrap it in delay itself will slow down the code
 // so jest has already cared about it
 // jest has utilities to fake the timers
