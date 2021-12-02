@@ -45,3 +45,5 @@ describe('Component: <MyComponent/>', () => {
   //   `);
   // })
 });
+
+// jest src/tests/examples/03-example-snapshot-component.test.js

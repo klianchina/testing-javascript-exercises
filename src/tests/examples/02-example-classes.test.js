@@ -33,3 +33,4 @@ describe('My module', () => {
 });
 
 // jest docs https://jestjs.io/ru/docs/api#beforeallfn-timeout
+// Article https://kentcdodds.com/blog/avoid-nesting-when-youre-testing
